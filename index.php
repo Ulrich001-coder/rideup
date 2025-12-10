@@ -40,7 +40,7 @@ if ($conn) {
     <main class="hero container">
       <h1>Bienvenue sur RideUp</h1>
       <h3>La plateforme de covoiturage pour les trajets domicile-école</h3>
-      <p>👥 Déjà <strong><?php echo $totalUsers; ?></strong> utilisateurs inscrits !</p>
+      <p> Déjà <strong><?php echo $totalUsers; ?></strong> utilisateurs inscrits !</p>
       <div class="btn-group">
         <button class="btn" onclick="location.href='inscription.php'">
           Inscription
@@ -52,7 +52,7 @@ if ($conn) {
     </main>
 
     <div class="notice">
-      💡 Astuce : Créez votre profil pour bénéficier des trajets partagés !
+       Astuce : Créez votre profil pour bénéficier des trajets partagés !
     </div>
 
     <footer class="site-footer">
