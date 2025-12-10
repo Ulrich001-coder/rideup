@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription_chauffeur- RideUp</title>
+    <link rel="stylesheet" href="assets\style.css" />
+    <script src="user.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo-container">
+        <img
+          src="image/ChatGPT Image 30 mai 2025, 20_16_23.png"
+          alt="Logo de RideUp"
+          class="logo-img"
+        />
+      </div>
+    </header>
+
+    <main class="form-container">
+      <div class="form-card animate">
+        <h1 class="title">Inscription Chauffeur</h1>
+        <p class="subtitle">
+          Rejoignez-nous pour partager vos trajets domicile-école !
+        </p>
+        <form id="formulaireChauffeur">
+          <input
+            type="text"
+            id="nomComplet"
+            placeholder="Nom complet"
+            required
+          />
+          <input
+            type="email"
+            id="emailAcademique"
+            placeholder="Email académique"
+            required
+          />
+          <input
+            type="password"
+            id="motDePasse"
+            placeholder="Mot de passe"
+            required
+          />
+          <input
+            type="tel"
+            id="telephone"
+            placeholder="Numéro de téléphone"
+            required
+          />
+          <input
+            type="text"
+            id="modeleVoiture"
+            placeholder="Modèle de voiture"
+            required
+          />
+          <input
+            type="text"
+            id="plaqueImmatriculation"
+            placeholder="Plaque d'immatriculation"
+            required
+          />
+          <input
+            type="number"
+            id="capaciteVehicule"
+            placeholder="Capacité du véhicule"
+            required
+          />
+          <label for="photoVoiture">Photo de la voiture (optionnelle)</label>
+          <input type="file" id="photoVoiture" />
+          <button type="submit" class="btn">S'inscrire</button>
+        </form>
+      </div>
+
+      <div class="form-card animate">
+        <h2 class="title">Calculateur de Coût de Trajet</h2>
+        <p class="subtitle">
+          Estimez vos gains potentiels en tant que chauffeur.
+        </p>
+        <form id="formulaireCalculatrice">
+          <input
+            type="number"
+            id="distanceTrajet"
+            placeholder="Distance du trajet (en km)"
+            required
+          />
+          <input
+            type="number"
+            id="coutEssence"
+            placeholder="Coût de l'essence au litre ($)"
+            required
+          />
+          <input
+            type="number"
+            id="consoVoiture"
+            placeholder="Consommation du véhicule (L/100km)"
+            required
+          />
+          <button type="submit" class="btn" id="btnCalculer">
+            Calculer le gain
+          </button>
+        </form>
+        <div id="resultatCalcul" class="resultat-box">
+          Le coût estimé de votre trajet est de **$0.00**.
+        </div>
+      </div>
+
+      <div class="form-card animate">
+        <h2 class="title">Outil de calcul rapide pour chauffeur</h2>
+        <p class="subtitle">
+          Gérez vos finances au quotidien : revenus, dépenses, etc.
+        </p>
+        <div class="calculatrice-grid">
+          <input
+            type="number"
+            id="nombre1"
+            placeholder="Premier nombre"
+            required
+          />
+          <input
+            type="number"
+            id="nombre2"
+            placeholder="Deuxième nombre"
+            required
+          />
+          <select id="operateur" class="btn-group">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">×</option>
+            <option value="/">÷</option>
+          </select>
+          <button id="btnOperation" class="btn">=</button>
+        </div>
+        <div id="resultatOperation" class="resultat-box">
+          Le résultat est **0**.
+        </div>
+      </div>
+
+      <div class="form-card animate">
+        <h2 class="title">Historique des passagers</h2>
+        <p class="subtitle">
+          Utilisez les boutons pour gérer votre liste de passagers.
+        </p>
+        <ul id="listePassagers"></ul>
+        <div class="btn-group-row">
+          <button id="btnAjouter" class="btn">Ajouter un passager</button>
+          <button id="btnRetirer" class="btn">Retirer le dernier</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
