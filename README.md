@@ -460,8 +460,6 @@ Caleb • Lele • Arthur
 
 🚗 "Votre trajet, notre connexion" 🚗
 
-https://img.shields.io/github/issues/votre-username/rideup?color=green
-https://img.shields.io/github/last-commit/votre-username/rideup
-https://img.shields.io/github/license/votre-username/rideup
+
 
 </div>
