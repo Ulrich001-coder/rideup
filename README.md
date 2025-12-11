@@ -242,7 +242,7 @@ rideup/
 │   └── style.css             # Feuille de style principale
 │
 ├── 📁 image/                  # Images et médias
-│   └── ChatGPT Image 30 mai 2025, 20_16_23.png
+│   └──  Image 30 mai 2025, 20_16_23.png
 │
 ├── 📄 index.php               # Page d'accueil
 ├── 📄 db.php                  # Configuration base de données
